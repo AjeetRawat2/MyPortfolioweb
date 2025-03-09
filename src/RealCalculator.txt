@@ -1,0 +1,25 @@
+a=int(input("Enter first number: "))
+for x in range(5):
+    sel=input("Enter an operator: ")
+    b=int(input("Enter the next number: ")) 
+    if sel=="+":
+        result=a+b
+    elif sel=="-":
+        result=a-b
+    elif sel=="*": 
+       result=a*b       
+    elif sel=="/":
+        if(b==0):
+           print("please enter a valid number")
+           break
+        else:
+            result=a/b
+    print(result)
+    d=input("Do you Want to continue: ") 
+    if d=="no":
+        break
+    elif d=="yes":
+        a=result
+    else:
+        print("Something went wrong")
+        break
